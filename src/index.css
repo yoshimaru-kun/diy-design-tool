@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'BIZ UDPGothic', 'Yu Gothic UI', 'Meiryo', 'MS PGothic', sans-serif;
+  background: #f0ede8;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#root {
+  height: 100%;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background 0.15s, opacity 0.15s, transform 0.1s;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #d0ccc8;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #5b8dd9;
+  box-shadow: 0 0 0 2px rgba(91,141,217,0.18);
+}
